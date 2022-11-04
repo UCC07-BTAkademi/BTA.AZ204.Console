@@ -1,0 +1,4 @@
+
+.. Kullanıcının girdiği 2 sayı arasındaki sayıların toplamını bulan programı hazırlayın.
+
+.. 0-9 arasındaki sayıları sayının değeri kadar yazdıran programı hazırlayın. Örnek: 122333444455555…

@@ -1,0 +1,18 @@
+
+1) Kullanıcı klavyeden sayı girişi yapabilmektedir. Girdiği sayıların toplamı 50'den büyük olduğunda ekrana o ana kadar girilen sayı adedini ve sonucu yazan bir programcık
+
+2) Kullanıcı klavyeden 0 değeri girinceye kadar okunan sayıların toplamı ve ortalamasını bulan programcık. 
+
+
+3) Kullanıcı klavyeden 20 adet yaş bilgisi girecek. Girilen bu bilgilerin içinden 19-26 yaş(dahil olmak üzere) aralığındakilerin adetlerini sayan programcık
+
+-----------------------------------------------------------------------------------------------------------
+
+
+
+
+
+
+.. Kullanıcının girdiği 2 sayı arasındaki sayıların toplamını bulan programı hazırlayın.
+
+.. 0-9 arasındaki sayıları sayının değeri kadar yazdıran programı hazırlayın. Örnek: 122333444455555…

@@ -26,71 +26,77 @@ namespace Donguler
             //  ....
             // }
 
-            // Örnek : 1-10 arası sayıların toplamı--------------
+            #region Örnek1
+            // Örnek 1 : 1-20 arasındaki sayıların toplamı
 
             //int toplam = 0;
 
-            //for (int i = 1; i <= 10; i++)
-            //    toplam = toplam + i;
+            //for (int sayi = 1 ; sayi <= 20 ; sayi++)
+            //{
+            //    toplam = toplam + sayi;
+            //}
 
-            //Console.WriteLine("\nSonuç : {0} ", toplam);
 
+            //Console.WriteLine("\nSonuç : {0}",toplam);
+            #endregion
 
-            // Örnek : Değişik bir yapı--------
+            #region Örnek2
+            // Örnek 2: Değişik yapıda
 
             //int sayi = 0;
-            //for (; sayi < 10; ++sayi)
-            //    Console.WriteLine(sayi);
 
-
-            // Örnek: 1den 500 e kadar olan sayılar içinde 3'e tam bölünen ve 5'e tam bölünemeyen sayıların adetlerini ve toplamlarını bulmak-----------------------
-
-            //int adet = 0;
-            //int top = 0;
-
-            //for (int sayi = 0; sayi <= 200; sayi++)
+            //for (; sayi < 10; sayi++)
             //{
-            //    if ((sayi%3 == 0) && (sayi%5 != 0))
+            //    Console.WriteLine("Sayı : {0}", sayi);
+            //}
+            #endregion
+
+            #region Örnek3
+            // Örnek3: 1den 200 e kadar olan sayılar içinde 3'e tam bölünen ve 5'e tam bölünemeyen sayıların adetlerini ve toplamlarını bulmak-----------------------
+
+            //int adet = 0; // kac tane old. tutacağım
+            //int toplam = 0;
+
+            //for (int sayi = 1; sayi <= 200; sayi++)
+            //{
+            //    if ((sayi % 3 == 0) && (sayi % 5 != 0)) 
             //    {
+            //        // ilgili sarta uyan sayı bulundu
             //        Console.WriteLine("Sayı : {0}", sayi);
 
-            //        top += sayi;
+            //        toplam = toplam + sayi;
 
-            //        adet++;
+            //        adet = adet + 1; ;
+
             //    }
             //}
 
-            //Console.WriteLine("\n\n{0} adet sayı bulundu..",adet);
-            //Console.WriteLine("Toplamları={0} ", top);
+            //Console.WriteLine("\n\n {0} adet sayı bulundu.....", adet);
+            //Console.WriteLine("\nToplamları : {0}", toplam);
+            #endregion
 
-            // Örnek : 0dan 100e kadar olan sayıları 5er 5er artışlı olacak şekilde bir satırda 6 adet sayı yazacak şekilde gösteriniz. Gösterilecek sayılar arasında da görünüm karmaşıklığı azaltmak için biraz boşluk veriniz.-------------
+            #region Örnek4
+            // 0dan 100e kadar olan sayıları 5er 5er artışlı olacak şekilde ve bir satırda 6 adet sayı yazacak şekilde gösteriniz.Gösterilecek sayılar arasında da görünüm karmaşıklığı azaltmak için biraz boşluk veriniz.
+            // a b c d e f
+            // g h i j k l
+            // .....
 
-            //int satiradet = 0;
+            //int satiradet = 0; //satırda yazılacak eleman sayısı
 
-            //for (int sayi = 0; sayi <= 100; sayi+=5)
+            //for (int sayi = 0; sayi <= 100 ; sayi += 5)
             //{
-            //    if (satiradet % 6 == 0)
+            //    if (satiradet % 6 == 0) // demekki bir satırı doldurmuşum ..bir alt satıra yazmaya devam edebilirim..
+            //    {
             //        Console.WriteLine();
+            //    }
 
-            //    Console.Write("{0,3} ",sayi);
+            //    Console.Write("{0,3} ",sayi); // db
 
             //    satiradet++;
-
             //}
 
-            //Console.WriteLine("\n\n");
-
-
-            // Üçgen çizimi----------------------------------------
-
-            //for (int i = 0; i < 5; i++) // Üçgenimizin kaç satırdan oluşacağını belirliyoruz.
-            //{
-            //    for (int k = 0; k < 5 - i; k++) // Üçgen yapımızın satırlarının oluşmasında belirli sayıda boşluk atılmasını sağlayan adım.
-            //        Console.Write(" ");
-            //    for (int j = 0; j <= i * 2; j++) // Üçgen yapımızı oluşturacak yıldızların belirli koşul yapısına bağlı olarak oluşmasını sağlayan döngü sistemi.
-            //        Console.Write("*");
-            //    Console.Write("  -> {0}. Üçgen Satırı\n", (i + 1));
-            //}
+            //Console.WriteLine("\n\nBitti");
+            #endregion
 
             // =========================
             // while döngüsü
@@ -107,36 +113,41 @@ namespace Donguler
             //  deyim3;
             //  ....
             // }
-            //
 
+            #region Örnek5
             // Örnek : 1 den 50 ye kadar olan sayıları yazdırma---------------------------------
-            //
 
             //int sayi = 1;
 
-            //while(sayi <= 50)
+            //while (sayi <=50)
             //{
-            //    Console.WriteLine("Sayı : {0} ", sayi);
+            //    Console.WriteLine("Sayi : {0}", sayi);
 
             //    sayi++;
+
             //}
 
-            // Örnek: 100e kadar olan pozitif tek tamsayıların toplamı---------------------------------
+            #endregion
+
+            #region Örnek6
+            // Örnek: 100e kadar olan pozitif tek tamsayıların toplamı
 
             //int sayi = 1;
-            //int son = 100;
+            //int sonsayi = 100;
             //int toplam = 0;
 
-            //while (sayi <= son)
+            //while (sayi <= sonsayi)
             //{
-            //    toplam += sayi;
+            //    toplam = toplam + sayi;
 
-            //    sayi += 2; 
+            //    sayi = sayi + 2;
+
             //}
+            //Console.WriteLine("Pozitif tek sayıların  toplamı : {0}", toplam);
 
-            //Console.WriteLine("Pozitif tek sayiların toplamı : {0}", toplam);
+            #endregion
 
-            //===================================================
+            //-------------------------
             // do while döngüsü
             //
             // do
@@ -153,51 +164,62 @@ namespace Donguler
             //  ....
             // } while (kosul);
 
-            // Örnek: şifre doğru olana kadar------------------------------
+            #region Örnek7
+            // Örnek: şifre doğru olana kadar-------
 
             //string sifre;
 
             //do
             //{
-            //    Console.WriteLine("Şifrenizi giriniz :");
+            //    Console.Write("Şifrenizi giriniz : ");
 
             //    sifre = Console.ReadLine();
 
+            //    sifre = sifre.Trim(); // girilen string değerin baş - sondaki eğer girilmişse boşluk karakterlerini atar kırpar....
+
             //} while (sifre != "q1w2e3");
 
-            //Console.WriteLine("Doğru şifre");
+            //Console.WriteLine("Doğru şifreyi girdiniz....");
 
-            // Örnek: sayı tahmin oyunu----------------------------
+            #endregion
 
-            int tutdeger, girdeger, deneme = 1, toplamdeneme = 5;
 
-            string ayrac = new string('-', 6);
+            #region Örnek8
+            // sayı tahmin oyunu...
 
-            Random random = new Random();
+            int tutdeger, girdeger, deneme = 1, toplamdeneme = 10;
 
-            tutdeger = random.Next(10); // max 10a kadar random sayı üretir
-            
+            string ayrac = "-----";
+            //string ayrac = new string('-', 15);
+
+            Random random = new Random(); // daha sonra bakılacak
+
+
+            tutdeger = random.Next(10); // 0 ila 10 arasında bir sayı tutacak
+
             do
             {
-                Console.Write("-> Lütfen Bir Tahminde Bulunun: ");
+                Console.WriteLine("Lütfen sayınızı giriniz    : ");
 
-                girdeger = Convert.ToInt32(Console.ReadLine()); 
-                
+                girdeger = int.Parse(Console.ReadLine());
+
                 if (tutdeger == girdeger)
                 {
-                    Console.Write("{0}\n-> Tebrikler. {1}.denemede doğru tahminde bulundunuz.\n{2}", ayrac, deneme, ayrac);
+                    Console.WriteLine("{0}\nTebrikler...{1}.denemede bildiniz...\n{2}", ayrac, deneme, ayrac);
                     break;
                 }
                 else if (deneme == toplamdeneme)
-                    Console.Write("{0}\n-> Üzgünüm deneme hakkınız bitti. Tahmin etmeniz gereken değer {1} olacaktı.\n{2}", ayrac, tutdeger, ayrac);
+                    Console.WriteLine("{0}\n-> Üzgünüm deneme hakkınız bitti. Tahmin etmeniz gereken değer {1} olacaktı.\n{2}", ayrac, tutdeger, ayrac);
+
                 else
-                    Console.Write("{0}\n", ayrac);
+                    Console.WriteLine("{0}\n", ayrac);
 
                 deneme++;
 
             } while (deneme <= toplamdeneme);
 
 
+            #endregion
 
             Console.ReadKey();
         }
